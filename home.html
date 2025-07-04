@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css"/>
+    <title></title>
+</head>
+<body>
+    <h1 id="welcomeMessage">Carregando...</h1>
+    <script>
+        const usuario = localStorage.getItem("usuarioLogado");
+
+        if(usuario){
+           document.getElementById("welcomeMessage").textContent = `Bem-vindo, ${usuario}! 👋`;
+        } 
+        else {
+      document.getElementById("welcomeMessage").textContent = "Usuário não logado.";
+        } 
+    </script>
+</body>
+</html>

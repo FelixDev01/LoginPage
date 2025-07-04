@@ -1,0 +1,43 @@
+body{
+    font-size: larger;
+    background: linear-gradient(to right, rgb(48, 2, 235), rgb(13, 5, 12));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.login-container{
+    
+    background: linear-gradient(to bottom, #0547ba,  #dadfe6);
+    padding: 30px;
+    border-radius: 40px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-container input{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login-container button{
+    width: 20%;
+    padding: 2px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+.login-container button:hover {
+  background-color: #6c85e8;
+}
+
+#message {
+    margin-top: 15px;
+    color: black
+}
