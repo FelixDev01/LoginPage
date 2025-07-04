@@ -5,10 +5,11 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     const password = document.getElementById("password").value;
     const message = document.getElementById("message");
 
-    const usuarioCorreto = "admin";
-    const senhaCorreta = "1234";
+    const users = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    if (username === usuarioCorreto && password === senhaCorreta){
+    const usuarioValido =users.find(user => user.username === username && user.password === password);
+
+    if (usuarioValido){
         localStorage.setItem("usuarioLogado", username);
         window.location.href = "home.html"
     }

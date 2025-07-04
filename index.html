@@ -8,11 +8,15 @@
 </head>
 <body>
   <div class = "login-container">
+    <img src="/img/user_icon.png" alt="user_icon" style="width: 100px;">
     <h2>Login</h2>
     <form id ="loginForm">
       <input type="text" id="username" placeholder="Usuario" required/>
       <input type="password" id="password" placeholder="Senha" required>
-      <button type="submit">Entrar</button>
+        <div id="buttonAndRegister">
+          <button type="submit">Entrar</button>
+          <a href="register.html">Criar uma conta</a>
+        </div>
     </form>
     <p id="message"></p>
   </div>

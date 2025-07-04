@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css"/>
+    <title>Cadastre-se já!</title>
+</head>
+<body>
+    <div class="cadastro-container">
+        <img src="/img/register_icon.png" alt="register_icon" style="width: 150px;">
+        <h2>Cadastre-se</h2>
+        <form id="registerForm">
+            <input type="text" id="newUsername" placeholder="Usuario" required/>
+            <input type="password" id="newPassword" placeholder="Senha" required/> 
+            <input type="confirmPassword" id="confirmPassword" placeholder="Confirme a senha" required/>
+            <div id="buttonAndRegister">
+                <button type="submit">Cadastrar</button>
+                <a href="index.html">Já tenho uma conta</a>
+            </div>
+        </form>
+        <p id="message"></p>
+        
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(e){
+            e.preventDefault();
+        
+            const newUsername = document.getElementById("newUsername").value;
+            const newPassword = document.getElementById("newPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if(confirmPassword != newPassword){
+                message.style.color ="red";
+                message.textContent ="As senhas devem ser iguais!"
+                return;
+            }
+
+            const users = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+            const usuarioExiste = users.some(user => user.username === newUsername)
+
+            if(usuarioExiste){
+                message.style.color="red";
+                message.textContent="Este nome de usuario já existe"
+                return;
+            }
+            
+            users.push({username: newUsername, password: newPassword});
+            localStorage.setItem("usuarios", JSON.stringify(users));
+
+                message.style.color="green";
+                message.textContent="Usuario cadastrado com sucesso!"    
+
+            setTimeout(() => { window.location.href="index.html"; }, 1500 );
+        });
+    </script>
+</body>
+</html>

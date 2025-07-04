@@ -7,8 +7,7 @@ body{
     height: 80vh;
 }
 
-.login-container{
-    
+.cadastro-container{
     background: linear-gradient(to bottom, #0547ba,  #dadfe6);
     padding: 30px;
     border-radius: 40px;
@@ -16,7 +15,7 @@ body{
     width: 300px;
 }
 
-.login-container input{
+.cadastro-container input{
     width: 100%;
     padding: 8px;
     margin: 5px 0;
@@ -24,25 +23,19 @@ body{
     border-radius: 5px;
 }
 
+.cadastro-container button{
+    width: 30%;
+    padding: 2px;
+    margin: 5px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastro-container button:hover {
+  background-color: #6c85e8;
+}
 #buttonAndRegister{
     padding: 0px;
 
-}
-
-.login-container button{
-    width: 50%;
-    padding: 2px;
-    background-color: aliceblue;
-    border: 1px solid #000;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-}
-.login-container button:hover {
-  background-color: #6c85e8;
-}
-
-#message {
-    margin-top: 15px;
-    color: black
 }
