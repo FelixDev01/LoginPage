@@ -8,7 +8,11 @@ body{
 }
 
 .cadastro-container{
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #0547ba,  #dadfe6);
+=======
+    background: linear-gradient(to bottom, #1102e4,  #5896f3);
+>>>>>>> f458906 (teste)
     padding: 30px;
     border-radius: 40px;
     text-align: center;
@@ -24,18 +28,42 @@ body{
 }
 
 .cadastro-container button{
+<<<<<<< HEAD
     width: 30%;
     padding: 2px;
     margin: 5px 0;
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
+=======
+    width: 50%;
+    height: 25px;
+    padding:2px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin-right: 20px;
+>>>>>>> f458906 (teste)
 }
 
 .cadastro-container button:hover {
   background-color: #6c85e8;
 }
+<<<<<<< HEAD
 #buttonAndRegister{
     padding: 0px;
 
+=======
+
+.cadastro-container a{
+    color: #000;
+    font-size: 16px;
+    margin-left: 2px;
+}
+.cadastro-container a:hover{
+    text-decoration: underline;
+>>>>>>> f458906 (teste)
 }

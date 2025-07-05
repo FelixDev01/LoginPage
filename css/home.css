@@ -1,6 +1,10 @@
 body{
     font-size: larger;
+<<<<<<< HEAD
     background: linear-gradient(to right, rgb(48, 2, 235), rgb(13, 5, 12));
+=======
+    background: linear-gradient(to right, rgb(48, 2, 235), rgb(7, 2, 83));
+>>>>>>> f458906 (teste)
     display: flex;
     align-items: center;
     justify-content: center;
